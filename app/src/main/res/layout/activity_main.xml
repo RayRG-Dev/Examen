@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_main.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agenda"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="380dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Nombre completo" />
+
+    <EditText
+        android:id="@+id/editTextControl"
+        android:layout_width="385dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/editTextName"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="No. de control" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar"
+        android:layout_below="@+id/editTextControl"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <Button
+        android:id="@+id/buttonViewAgenda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver agenda"
+        android:layout_below="@+id/buttonAdd"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <EditText
+        android:id="@+id/editTextSearchControl"
+        android:layout_width="382dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/buttonViewAgenda"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Buscar por No. Control" />
+
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        android:layout_below="@+id/editTextSearchControl"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <TextView
+        android:id="@+id/textViewContactCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contactos: 0"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/buttonSearch"
+        android:layout_marginTop="24dp" />
+
+</RelativeLayout>
+
